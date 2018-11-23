@@ -22,7 +22,7 @@ matrix:
   - os: linux
 
 install:
-  - travis_wait bash -ex tool/travis/depends.sh
+  - travis_wait bash -ex depends.sh
 
 script:
-  - bash -ex tool/travis/build.sh
+  - bash -ex build.sh

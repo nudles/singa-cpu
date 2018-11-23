@@ -29,7 +29,7 @@ suffix=$TRAVIS_JOB_NUMBER  #`TZ=Asia/Singapore date +%Y-%m-%d-%H-%M-%S`
 export CONDA_BLD_PATH=~/conda-bld-$suffix
 mkdir $CONDA_BLD_PATH
 
-conda build . --python 3.6
+conda build conda --python 3.6
 
 # turn off debug to hide the token in travis log
 set +x
